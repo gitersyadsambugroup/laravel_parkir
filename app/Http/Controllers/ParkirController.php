@@ -23,6 +23,6 @@ class ParkirController extends Controller
     {
         // dd($req->all());
         Parkir::create($req->all());
-        return redirect()->route('vtambah_parkir');
+        return redirect()->route('vtambah_parkir')->with('success', 'Add data oke!');
     }
 }

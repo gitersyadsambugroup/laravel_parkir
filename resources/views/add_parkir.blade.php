@@ -13,6 +13,11 @@
     <h1 class="text-center mb-5">Tambah Data Parkir</h1>
     <div class="container">
         <div class="row justify-content-center">
+            @if ($message = Session::get('success'))
+                <div class="alert alert-success" role="alert">
+                    {{$message}}
+                </div>
+            @endif
             <div class="col-8">
                 <div class="card">
                     <div class="card-body">

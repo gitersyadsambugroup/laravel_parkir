@@ -21,6 +21,8 @@
                         <th scope="col">First</th>
                         <th scope="col">Last</th>
                         <th scope="col">Handle</th>
+                        <th scope="col">Handle</th>
+                        <th scope="col">Handle</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,6 +31,8 @@
                         <th scope="row">{{ $data_parkir_row->id }}</th>
                         <td>{{ $data_parkir_row->no_pol }}</td>
                         <td>{{ $data_parkir_row->kode_unik }}</td>
+                        <td>{{ $data_parkir_row->created_at->format('d-m-Y h:s:i') }}</td>
+                        <td>{{ $data_parkir_row->updated_at->diffForHumans() }}</td>
                         <td><button type="button" class="btn btn-warning">Edit</button>
                             <button type="button" class="btn btn-danger">Delete</button>
                         </td>
